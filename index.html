@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERROSTOCK</title>
+    <link rel="shortcut icon" href="img/Logo ferrostock sin fondo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Imagen de fondo de herramientas -->
+    <div class="fondo">
+        <img src="img/fondo.png" alt="Fondo herramientas">
+    </div>
+
+    <!-- Contenedor principal del login -->
+    <div class="login-container">
+        <!-- Video del logo -->
+        <div class="logo-container">
+            <video src="img/logo.mp4" autoplay muted playsinline></video>
+        </div>
+
+        <!-- Formulario / Contenedor de elementos -->
+        <form class="form-grid">
+            <!-- Campo Usuario con icono -->
+            <div class="input-icon-wrapper">
+                <span class="icon-user">👤</span>
+                <input type="text" id="userInput" placeholder="Usuario" required>
+            </div>
+
+            <!-- Campo Contraseña -->
+            <input type="password" id="passInput" placeholder="password" required>
+
+            <!-- Recordar Contraseña -->
+            <div class="checkbox-container">
+                <input type="checkbox" id="remember">
+                <label for="remember">Recordar Contraseña</label>
+            </div>
+
+            <!-- Botones de Acción -->
+            <div class="buttons-grid">
+                <button type="submit" id="btnlogin" class="btnlogin">Iniciar sesión</button>
+                <button type="button" class="btn-secondary">Recuperar Usuario</button>
+                <button type="button" class="btn-primary">Registrarse</button>
+                <button type="button" class="btn-secondary">Recuperar Clave</button>
+            </div>
+            
+        </form>
+    </div>
+    
+    <!-- Archivo JS conectado al final -->
+    <script src="js/credenciales.js"></script>
+
+    
+</script>
+</body>
+</html>
